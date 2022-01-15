@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Animated-Watch</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <svg width="200" height="200" viewBox="-100 -100 200 200">
+      <circle class="minute_marker" r="90" pathLength="60" />
+      <circle class="hour_marker" r="90" pathLength="60" />
+      <text id="text" class="text" x="45" y="5"></text>
+
+      <g id="hour_hand">
+        <line class="hand" x1="0" y1="0" x2="0" y2="-50" />
+        <line class="hand hand--thick" x1="0" y1="-12" x2="0" y2="-50" />
+      </g>
+
+      <g id="minute_hand">
+        <line class="hand" x1="0" y1="0" x2="0" y2="-80" />
+        <line class="hand hand--thick" x1="0" y1="-12" x2="0" y2="-80" />
+      </g>
+
+      <g id="second_hand">
+        <line class="hand hand--second" x1="0" y1="12" x2="0" y2="-80" />
+      </g>
+
+      <circle class="center" r="3" />
+    </svg>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+html {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+}
+
+svg {
+  display: none;
+}
+
+body {
+  background-color: #7d053f;
+  margin: 0;
+}
+
+.hour_marker {
+  fill: transparent;
+  stroke: #f0f0c9;
+  stroke-width: 7;
+  stroke-dasharray: 0.2, 4.8;
+  stroke-dashoffset: 0.1;
+}
+
+.minute_marker {
+  fill: transparent;
+  stroke: #0f0e0e;
+  stroke-width: 7;
+  stroke-dasharray: 0.2, 0.8;
+  stroke-dashoffset: 0.1;
+}
+
+.hand {
+  stroke: #ffffff;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.hand--thick {
+  stroke-width: 7;
+}
+
+.hand--second {
+  stroke: yellow;
+}
+
+.center {
+  fill: #7b0828;
+  stroke-width: 2;
+  stroke: white;
+}
+
+.text {
+  fill: #f0f0c9;
+  font-family: "Roboto", sans-serif;
+  text-anchor: middle;
+  cursor: pointer;
+  user-select: none;
+}
